@@ -9,6 +9,7 @@
         "PATH": "C:\\msys64\\mingw64\\bin;${env:PATH}"
     },
     "files.associations": {
+        "*.dbclient-js": "javascript",
         "iostream": "cpp",
         "*.tcc": "cpp",
         "ostream": "cpp",
@@ -62,6 +63,8 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "map": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "sstream": "cpp",
+        "customobjectsasmapvalues,cpp": "cpp"
     }
 }
