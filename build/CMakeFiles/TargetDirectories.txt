@@ -1,0 +1,5 @@
+C:/Users/miroslav.seri/git_ws/advancedCTraining/build/CMakeFiles/edit_cache.dir
+C:/Users/miroslav.seri/git_ws/advancedCTraining/build/CMakeFiles/rebuild_cache.dir
+C:/Users/miroslav.seri/git_ws/advancedCTraining/build/sources/ringBuffer/CMakeFiles/app.dir
+C:/Users/miroslav.seri/git_ws/advancedCTraining/build/sources/ringBuffer/CMakeFiles/edit_cache.dir
+C:/Users/miroslav.seri/git_ws/advancedCTraining/build/sources/ringBuffer/CMakeFiles/rebuild_cache.dir

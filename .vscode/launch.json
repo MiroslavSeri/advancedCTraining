@@ -1,11 +1,11 @@
-{
+﻿{
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug active C++ file",
+            "name": "Spustit aktivnĂ­ C++ soubor",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -20,7 +20,27 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "build"
+            "preLaunchTask": "Build Active File"
+        },
+        {
+            "name": "Spustit CMake projekt (AUTO)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}\\build\\sources\\ringBuffer\\app.exe",
+            "cwd": "${workspaceFolder}\\build\\sources\\ringBuffer",
+            "args": [],
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build-cmake"
         }
     ]
 }

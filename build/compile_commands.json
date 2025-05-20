@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/miroslav.seri/git_ws/advancedCTraining/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -g -std=gnu++17 -g -O0 -o sources\\ringBuffer\\CMakeFiles\\app.dir\\ringBuffer.cpp.obj -c C:\\Users\\miroslav.seri\\git_ws\\advancedCTraining\\sources\\ringBuffer\\ringBuffer.cpp",
+  "file": "C:\\Users\\miroslav.seri\\git_ws\\advancedCTraining\\sources\\ringBuffer\\ringBuffer.cpp",
+  "output": "sources\\ringBuffer\\CMakeFiles\\app.dir\\ringBuffer.cpp.obj"
+}
+]

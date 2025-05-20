@@ -2,14 +2,43 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build All CPP",
+            "label": "init-project",
             "type": "shell",
-            "command": "g++",
+            "command": "powershell",
+            "args": [
+                "-ExecutionPolicy",
+                "Bypass",
+                "-Command",
+                "& { Remove-Item -Recurse -Force .\\build\\* -ErrorAction SilentlyContinue; cmake -S . -B build; .vscode/set-active-project.ps1; .vscode/generate-launch.ps1 }"
+            ],
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "build-cmake",
+            "type": "shell",
+            "dependsOn": [
+                "init-project"
+            ],
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build Active File",
+            "type": "shell",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
             "args": [
                 "-g",
-                "${workspaceFolder}/sources/**/*.cpp",
+                "${file}",
                 "-o",
-                "${workspaceFolder}/build/program.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "group": {
                 "kind": "build",
@@ -17,13 +46,7 @@
             },
             "problemMatcher": [
                 "$gcc"
-            ],
-            "presentation": {
-                "reveal": "silent"
-            },
-            "options": {
-                "cwd": "${workspaceFolder}"
-            }
+            ]
         }
     ]
 }

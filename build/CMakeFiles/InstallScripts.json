@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/miroslav.seri/git_ws/advancedCTraining/build/cmake_install.cmake",
+		"C:/Users/miroslav.seri/git_ws/advancedCTraining/build/sources/ringBuffer/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
