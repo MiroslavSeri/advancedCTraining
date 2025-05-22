@@ -1,0 +1,20 @@
+# Kompilované soubory
+*.o
+*.obj
+*.exe
+*.out
+
+# Build adresáře
+/build/
+/bin/
+/out/
+/build/.cmake/api/v1/query/client-vscode/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+/advancedCTraining/build/.ninja_deps
+/advancedCTraining/build/
