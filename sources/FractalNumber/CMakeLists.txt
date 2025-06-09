@@ -7,6 +7,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_compile_options(-g -O0)
 
 add_executable(app
-    BitmapFileHeader.cpp
+    main.cpp
     Bitmap.cpp
+    mandelBrot.cpp
+    zoomList.cpp
+    FractalCreator.cpp
+    RGB.cpp
 )
